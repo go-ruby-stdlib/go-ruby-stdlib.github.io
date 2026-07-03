@@ -1,0 +1,235 @@
+baseURL = "https://go-ruby-stdlib.github.io/"
+title = "go-ruby-stdlib"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "404"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Every module in the pure-Go, CGO-free Ruby standard library. Each entry
+# renders one card with its Ruby module, one-line description, and the three
+# uniform links (repo / landing / docs) derived from `name`:
+#   repo    https://github.com/go-ruby-<name>/<name>
+#   landing https://go-ruby-<name>.github.io/
+#   docs    https://go-ruby-<name>.github.io/docs/
+# `wave` groups the cards (1 = waves 1–2 core, 3, 4).
+
+# ── Waves 1–2 — core (14) ─────────────────────────────────────────────
+[[params.modules]]
+  name = "regexp"
+  ruby = "Regexp"
+  wave = 1
+  desc = "Onigmo-compatible regular-expression engine"
+[[params.modules]]
+  name = "erb"
+  ruby = "ERB"
+  wave = 1
+  desc = "ERB embedded-Ruby templating"
+[[params.modules]]
+  name = "yaml"
+  ruby = "YAML/Psych"
+  wave = 1
+  desc = "YAML emitter and loader (Psych)"
+[[params.modules]]
+  name = "format"
+  ruby = "format/sprintf"
+  wave = 1
+  desc = "sprintf / format / String#% formatting"
+[[params.modules]]
+  name = "strscan"
+  ruby = "StringScanner"
+  wave = 1
+  desc = "StringScanner lexical scanning"
+[[params.modules]]
+  name = "optparse"
+  ruby = "OptionParser"
+  wave = 1
+  desc = "OptionParser command-line option parsing"
+[[params.modules]]
+  name = "json"
+  ruby = "JSON"
+  wave = 1
+  desc = "JSON generation and parsing"
+[[params.modules]]
+  name = "bigdecimal"
+  ruby = "BigDecimal"
+  wave = 1
+  desc = "arbitrary-precision decimal arithmetic"
+[[params.modules]]
+  name = "date"
+  ruby = "Date/DateTime"
+  wave = 1
+  desc = "Date and DateTime"
+[[params.modules]]
+  name = "uri"
+  ruby = "URI"
+  wave = 1
+  desc = "URI parsing and manipulation"
+[[params.modules]]
+  name = "csv"
+  ruby = "CSV"
+  wave = 1
+  desc = "CSV reading and writing"
+[[params.modules]]
+  name = "shellwords"
+  ruby = "Shellwords"
+  wave = 1
+  desc = "POSIX shell-style word splitting and escaping"
+[[params.modules]]
+  name = "digest"
+  ruby = "Digest"
+  wave = 1
+  desc = "message digests (MD5/SHA1/SHA2/…)"
+[[params.modules]]
+  name = "marshal"
+  ruby = "Marshal"
+  wave = 1
+  desc = "Marshal binary object serialization"
+
+# ── Wave 3 (21) ───────────────────────────────────────────────────────
+[[params.modules]]
+  name = "set"
+  ruby = "Set"
+  wave = 3
+  desc = "unordered unique collection with full set algebra"
+[[params.modules]]
+  name = "time"
+  ruby = "Time"
+  wave = 3
+  desc = "Time extensions (parse/strptime/RFC formats)"
+[[params.modules]]
+  name = "getoptlong"
+  ruby = "GetoptLong"
+  wave = 3
+  desc = "GNU-style command-line option parsing"
+[[params.modules]]
+  name = "scanf"
+  ruby = "scanf"
+  wave = 3
+  desc = "formatted input scanning"
+[[params.modules]]
+  name = "stringio"
+  ruby = "StringIO"
+  wave = 3
+  desc = "in-memory string-backed IO"
+[[params.modules]]
+  name = "abbrev"
+  ruby = "Abbrev"
+  wave = 3
+  desc = "unambiguous abbreviation calculation"
+[[params.modules]]
+  name = "tsort"
+  ruby = "TSort"
+  wave = 3
+  desc = "topological sorting"
+[[params.modules]]
+  name = "prime"
+  ruby = "Prime"
+  wave = 3
+  desc = "prime generation and Baillie-PSW primality"
+[[params.modules]]
+  name = "cgi"
+  ruby = "CGI"
+  wave = 3
+  desc = "CGI escaping, cookies, and helpers"
+[[params.modules]]
+  name = "zlib"
+  ruby = "Zlib"
+  wave = 3
+  desc = "deflate/inflate/gzip plus CRC32/Adler32"
+[[params.modules]]
+  name = "did-you-mean"
+  ruby = "DidYouMean"
+  wave = 3
+  desc = "spelling suggestions for names"
+[[params.modules]]
+  name = "ipaddr"
+  ruby = "IPAddr"
+  wave = 3
+  desc = "IPv4/IPv6 address manipulation"
+[[params.modules]]
+  name = "pathname"
+  ruby = "Pathname"
+  wave = 3
+  desc = "filesystem-path objects"
+[[params.modules]]
+  name = "rational"
+  ruby = "Rational"
+  wave = 3
+  desc = "exact rational numbers"
+[[params.modules]]
+  name = "prettyprint"
+  ruby = "PrettyPrint"
+  wave = 3
+  desc = "Wadler pretty-printing engine"
+[[params.modules]]
+  name = "unicode-normalize"
+  ruby = "unicode_normalize"
+  wave = 3
+  desc = "Unicode normalization (NFC/NFD/NFKC/NFKD)"
+[[params.modules]]
+  name = "cmath"
+  ruby = "CMath"
+  wave = 3
+  desc = "complex-valued math functions"
+[[params.modules]]
+  name = "matrix"
+  ruby = "Matrix"
+  wave = 3
+  desc = "Matrix and Vector linear algebra"
+[[params.modules]]
+  name = "complex"
+  ruby = "Complex"
+  wave = 3
+  desc = "complex numbers"
+[[params.modules]]
+  name = "resolv"
+  ruby = "Resolv"
+  wave = 3
+  desc = "DNS resolution primitives"
+[[params.modules]]
+  name = "rexml"
+  ruby = "REXML"
+  wave = 3
+  desc = "XML DOM, parsing, serialization, XPath subset"
+
+# ── Wave 4 (8) ────────────────────────────────────────────────────────
+[[params.modules]]
+  name = "logger"
+  ruby = "Logger"
+  wave = 4
+  desc = "leveled logging"
+[[params.modules]]
+  name = "base64"
+  ruby = "Base64"
+  wave = 4
+  desc = "Base64 encode/decode (SIMD-accelerated)"
+[[params.modules]]
+  name = "securerandom"
+  ruby = "SecureRandom"
+  wave = 4
+  desc = "cryptographically-secure random values"
+[[params.modules]]
+  name = "ostruct"
+  ruby = "OpenStruct"
+  wave = 4
+  desc = "dynamic attribute objects"
+[[params.modules]]
+  name = "benchmark"
+  ruby = "Benchmark"
+  wave = 4
+  desc = "timing measurement"
+[[params.modules]]
+  name = "pstore"
+  ruby = "PStore"
+  wave = 4
+  desc = "transactional file-backed object store"
+[[params.modules]]
+  name = "observer"
+  ruby = "Observable"
+  wave = 4
+  desc = "publish/subscribe mixin"
+[[params.modules]]
+  name = "find"
+  ruby = "Find"
+  wave = 4
+  desc = "recursive directory traversal"
