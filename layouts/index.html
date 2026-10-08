@@ -53,6 +53,7 @@
     display: inline-block; padding: 10px 18px; margin: 4px; border-radius: 8px; text-decoration: none;
     font-weight: 600; border: 1px solid var(--border);
   }
+  .btn .icon{display:inline-block;vertical-align:-0.15em;margin-right:.45em}
   .btn.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
   .btn.ghost { color: var(--fg); background: transparent; }
   .lead { color: var(--fg); max-width: 820px; margin: 8px auto 0; text-align: center; }
@@ -100,8 +101,8 @@
       <span class="pill">static binary</span>
     </div>
     <div class="cta">
-      <a class="btn primary" href="https://github.com/go-ruby-stdlib/stdlib">Aggregate module: <code>stdlib</code></a>
-      <a class="btn ghost" href="https://github.com/go-ruby-stdlib">Ecosystem source</a>
+      <a class="btn primary" href="https://github.com/go-ruby-stdlib/stdlib">{{ partial "icons/package.html" . }}Aggregate module: <code>stdlib</code></a>
+      <a class="btn ghost" href="https://github.com/go-ruby-stdlib">{{ partial "icons/mark-github.html" . }}Ecosystem source</a>
     </div>
     <div class="badges">
       <a href="https://pkg.go.dev/github.com/go-ruby-stdlib/stdlib"><img alt="pkg.go.dev reference" src="https://pkg.go.dev/badge/github.com/go-ruby-stdlib/stdlib.svg"></a>
