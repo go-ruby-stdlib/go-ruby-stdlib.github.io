@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{/* Dark Reader repaints pages that already draw their own dark theme, as this one does: ask it to stand aside. */}}
+<meta name="darkreader-lock">
 <title>{{ .Site.Title }} — the whole MRI-compatible Ruby standard library in pure Go, no cgo</title>
 <meta name="description" content="go-ruby-stdlib — one pure-Go, CGO-free import for the whole MRI-compatible Ruby standard library. A portal indexing every module: regexp, json, set, matrix, securerandom, and more.">
 <style>
