@@ -44,11 +44,9 @@
   <div class="hero"><div class="wrap">
     <div>
       <h1 class="head">go-ruby-stdlib</h1>
-      <p class="sub">One pure-Go, CGO-free import for the whole MRI-compatible Ruby standard library.</p>
-      <div class="cta">
-        <a class="btn btn-primary" href="https://github.com/go-ruby-stdlib/stdlib">{{ partial "icons/package.html" . }}Aggregate module: <code>stdlib</code></a>
-        <a class="btn btn-ghost" href="https://github.com/go-ruby-stdlib">{{ partial "icons/github.html" . }}Ecosystem source</a>
-      </div>
+      <p class="sub">One {{ if partial "mantra-on.html" . }}Go{{ else }}pure-Go{{ end }}, {{ if not (partial "mantra-on.html" $) }}CGO-free{{ end }} import for the whole MRI-compatible Ruby standard library.</p>
+      {{/* [[params.cta]] in hugo.toml: the kit renders the row */}}
+      {{ partial "cta.html" . }}
       <div class="trust">{{ if not (partial "mantra-on.html" $) }}<span class="pill">pure Go · zero cgo</span>{{ end }}<span class="pill">43 modules</span><span class="pill">MRI byte-exact</span><span class="pill">one aggregate import</span><span class="pill">differential oracle</span><span class="pill">100% coverage</span><span class="pill">6 arches · 3 OSes</span><span class="pill">static binary</span></div>
       <div class="legacy"><div class="badges">
       <a href="https://pkg.go.dev/github.com/go-ruby-stdlib/stdlib"><img alt="pkg.go.dev reference" src="https://pkg.go.dev/badge/github.com/go-ruby-stdlib/stdlib.svg"></a>
